@@ -7,7 +7,7 @@ RUN python -m venv venv
 ENV PATH="/app/venv/bin:$PATH"
 
 #crear el archivo de log
-RUN mkdir -p /app/logs
+#RUN mkdir -p /app/logs
 
 #copair el archivo de requirements
 COPY requirements.txt .

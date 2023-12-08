@@ -6,7 +6,7 @@ services:
     volumes:
       - ./logs/app1:/app/logs
     environment:
-      MESSAGE: "Mensaje Personalizado para App 1"
+      MESSAGE: "Mensaje Personalizado para App 1 desde yaml"
 
   app2:
     build:
@@ -14,4 +14,4 @@ services:
     volumes:
       - ./logs/app2:/app/logs
     environment:
-      MESSAGE: "Mensaje Personalizado para App 2"
+      MESSAGE: "Mensaje Personalizado para App 2 desde yaml"
