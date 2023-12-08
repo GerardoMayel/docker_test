@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  app1:
+    build:
+      context: ./app1
+    environment:
+      MESSAGE: "Mensaje Personalizado para App 1"
+
+  app2:
+    build:
+      context: ./app2
+    environment:
+      MESSAGE: "Mensaje Personalizado para App 2"
