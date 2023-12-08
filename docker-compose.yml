@@ -3,11 +3,15 @@ services:
   app1:
     build:
       context: ./app1
+    volumes:
+      - ./logs/app1:/app/logs
     environment:
       MESSAGE: "Mensaje Personalizado para App 1"
 
   app2:
     build:
       context: ./app2
+    volumes:
+      - ./logs/app2:/app/logs
     environment:
       MESSAGE: "Mensaje Personalizado para App 2"

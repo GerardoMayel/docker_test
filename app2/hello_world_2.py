@@ -2,11 +2,11 @@ import os
 import logging
 import subprocess
 
-# Lee la variable de entorno 'MESSAGE'. Si no está definida, usa 'Hello World 1' como predeterminado.
-message = os.getenv('MESSAGE', 'Hello World 2 no definido mensaje 2')
-
 # Configuración de logging
 logging.basicConfig(filename='/app/logs/app1.log', level=logging.INFO, format='%(asctime)s %(levelname)s:%(message)s')
+
+# Lee la variable de entorno 'MESSAGE'. Si no está definida, usa 'Hello World 1' como predeterminado.
+message = os.getenv('MESSAGE', 'Hello World 2 no definido mensaje 2')
 
 # Registra el mensaje en el archivo de log
 logging.info(message)
