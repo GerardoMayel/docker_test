@@ -1,14 +1,13 @@
-# docker_hello_world_python
+Docker Test Project
 
-Contiene el código para los primeros pasos con Docker y Docker Compose
+Descripción
 
-# Docker Test Project
+Este proyecto es una demostración de cómo usar Docker y Docker Compose para ejecutar dos aplicaciones Python en contenedores separados. Cada aplicación imprime un mensaje personalizado en la consola y registra este mensaje, junto con otros datos, en archivos de log.
 
-Este proyecto demuestra el uso de Docker y Docker Compose para ejecutar dos simples aplicaciones Python en contenedores separados.
+Estructura del Proyecto
 
-## Estructura del Proyecto
-
-docker_test/
+Copy code
+tu_proyecto/
 │
 ├── app1/
 │ ├── Dockerfile
@@ -18,14 +17,37 @@ docker_test/
 │ ├── Dockerfile
 │ └── hello_world_2.py
 │
-├── .dockerignore
+├── logs/
+│ ├── app1/
+│ └── app2/
+│
 └── docker-compose.yml
+app1/ y app2/: Directorios que contienen los Dockerfiles y scripts Python para cada aplicación.
+logs/: Directorio donde se almacenan los logs generados por cada aplicación.
+docker-compose.yml: Define y orquesta los servicios de Docker.
+Requisitos
 
-- `app1/` y `app2/`: Contienen los Dockerfiles y scripts Python para cada aplicación.
-- `.dockerignore`: Especifica los archivos y directorios que Docker debería ignorar.
-- `docker-compose.yml`: Define y orquesta los servicios de Docker.
+Docker
+Docker Compose
+Configuración y Uso
 
-## Requisitos
+Para configurar y utilizar este proyecto:
 
-- Docker
-- Docker Compose
+Clona el Repositorio: git clone https://github.com/GerardoMayel/docker_test.git.
+Navega al Directorio del Proyecto: cd docker_test.
+Construye y Levanta los Contenedores: docker-compose up --build.
+Personalización
+
+Puedes personalizar los mensajes impresos por cada aplicación modificando las variables de entorno en docker-compose.yml.
+
+Logs
+
+Los logs de cada aplicación se almacenan en el directorio logs/ correspondiente en el host. Estos logs incluyen los mensajes impresos y la salida del comando pip freeze.
+
+Contribuciones
+
+Las contribuciones son bienvenidas. Por favor, asegúrate de seguir las buenas prácticas de desarrollo y mantener la estructura y estilo del código existente.
+
+Licencia
+
+Este proyecto está bajo la Licencia MIT.
