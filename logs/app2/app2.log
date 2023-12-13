@@ -1,0 +1,27 @@
+2023-12-12 22:16:21,944 INFO:Mensaje Personalizado para App 2 desde yaml
+2023-12-12 22:16:21,945 INFO:Hello World 2
+2023-12-12 22:16:23,413 INFO:numpy==1.24.4
+pandas==2.0.3
+python-dateutil==2.8.2
+pytz==2023.3.post1
+six==1.16.0
+tzdata==2023.3
+
+2023-12-12 23:52:52,613 INFO:Mensaje Personalizado para App 2 desde yaml
+2023-12-12 23:52:52,614 INFO:Hello World 2
+2023-12-12 23:52:54,360 INFO:numpy==1.24.4
+pandas==2.0.3
+python-dateutil==2.8.2
+pytz==2023.3.post1
+six==1.16.0
+tzdata==2023.3
+
+2023-12-12 23:58:17,404 INFO:Mensaje Personalizado para App 2 desde yaml
+2023-12-12 23:58:17,405 INFO:Hello World 2
+2023-12-12 23:58:19,269 INFO:numpy==1.24.4
+pandas==2.0.3
+python-dateutil==2.8.2
+pytz==2023.3.post1
+six==1.16.0
+tzdata==2023.3
+
